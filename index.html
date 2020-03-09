@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Web Design from UI / UX</title>
+  </head>
+  <body>
+    <aside>
+      <figure>
+        <div id="avatar"></div>
+        <figcaption>Pradeep Poudel</figcaption>
+      </figure>
+      <img src="images/menu.svg" />
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT ME</a></li>
+          <li><a href="#">MY RESUME</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <h1 id="color">I'm a designer of Web & Graphics</h1>
+      <p>
+        Gifted Graphic Design, Quality Assurance, Web Design offering more than
+        6 years of experience in demanding environments.
+      </p>
+      <a
+        href="https://docs.google.com/document/d/1y4NPYMva2GYRhPJirFBpg-NoDUnnHDHt62ufqtSooAk/edit?usp=sharing"
+        class="cta"
+        >My Resume</a
+      >
+    </main>
+  </body>
+  <script>
+    (function() {
+      var menu = document.querySelector("ul"),
+        menulink = document.querySelector("img");
+      menulink.addEventListener("click", function(e) {
+        menu.classList.toggle("active");
+        e.preventDefault();
+      });
+    })();
+  </script>
+</html>
